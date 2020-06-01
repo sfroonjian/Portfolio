@@ -1,0 +1,95 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+.homepage-top {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.othertabs-top {
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 150px;
+}
+
+.title-name {
+  font-size: 120px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+.title-name2 {
+  font-size: 60px;
+}
+
+.title-description {
+  font-size: 30px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.title-description2 {
+  font-size: 26px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.navbar {
+  background-color: blueviolet;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.nav-item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-brand {
+  background-color: #5891a6;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.learn-more {
+  background-color: #5891a6;
+  border-color: #5891a6;
+}
+
+.grey-button {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.link {
+  color: #5891a6;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.skill-header {
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .title-name {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-name {
+    font-size: 60px;
+  }
+}
