@@ -78,15 +78,127 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Project 1</h1>
+                <h1 class="display-3 title-name2">Players in the NBA, NFL, MLB, & NHL</h1>
+                <a href="https://github.com/sfroonjian/Player-Stats-Analysis-Project" target="_blank"
+                    class="btn btn-primary blue-button">Github Repository</a>
             </div>
         </div>
 
         <div class="container">
-            <!-- Example row of columns -->
-            <p>
-                Sample text
-            </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code" src="images/height_points.png">
+                </div>
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code" src="images/height_assists.png">
+                </div>
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code" src="images/age_points.png">
+                </div>
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code" src="images/age_assists.png">
+                </div>
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code map" src="images/college_map.png">
+                </div>
+                <div class="col-lg-4 col-md-6 sample-pics">
+                    <img class="code map" src="images/birth_map.png">
+                </div>
+            </div>
+            <br>
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'purpose')">Purpose</button>
+                <button class="tablinks" onclick="openCity(event, 'tech')">Technologies Used</button>
+                <button class="tablinks" onclick="openCity(event, 'sources')">Data Sources</button>
+                <button class="tablinks" onclick="openCity(event, 'example')">Example Code</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="purpose" class="tabcontent">
+                <p class="tab-description">
+                    The purpose of this project is to analyze the statistics of players in the
+                    NBA, NFL, MLB, and NHL to answer the following questions:
+                </p>
+                <ol>
+                    <li>Is player height correlated to ability in the NBA? Is so, what is the optimal height for NBA
+                        players?</li>
+                    <li>Is player age correlated to ability in any of the sports? If so, what is the optimal age for
+                        each sport?</li>
+                    <li>Are there specific towns/areas that players in each sport are more likely to come from? If so,
+                        where?</li>
+                    <li>Are there specific colleges that players in each sport are more likely to attend? Is so, which
+                        colleges?</li>
+                </ol>
+                <p class="tab-description">
+                    This was done by first importing data from a sports API and an NHL website, cleaning/manipulating
+                    the
+                    data with Pandas, and extracting only the necessary data.
+                    Matplotlib was then used to create ours graphs, and GeoCode was used to find the coordinates of
+                    hometowns and colleges.
+                    Lastly, the coordinates of hometowns and colleges was used to create a heatmap of each.
+                </p>
+            </div>
+
+            <div id="tech" class="tabcontent">
+                <div class="row tab-description">
+                    <!-- <p class="tab-description"> -->
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Python</li>
+                            <li>Matplotlib</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li>GeoCode</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Pandas</li>
+                            <li>Jupyter Notebook</li>
+                        </ul>
+                        <!-- </p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="sources" class="tabcontent">
+                <p class="tab-description">
+                <ul>
+                    <li>
+                        API website used to import data on players of all sports: <a class="link"
+                            href="www.mysportsfeeds.com" target="_blank">My Sports Feeds</a>
+                    </li>
+                    <li>
+                        Data on colleges NHL players attended: <a class="link"
+                            href="https://www.stateofhockey.com/news_article/show/1010827"
+                            target="_blank">State of Hockey</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div id="example" class="tabcontent">
+                <p class="tab-description">
+                    <img class="code" src="images/nba_code1.png">
+                    <img class="code" src="images/nba_code2.png">
+                    <img class="code" src="images/nba_code3.png">
+                    <img class="code" src="images/nba_code4.png">
+                    <img class="code" src="images/nba_code5.png">
+                    <img class="code" src="images/nba_code6.png">
+                    <img class="code" src="images/nba_code7.png">
+                    <img class="code" src="images/nba_code8.png">
+                    <img class="code" src="images/nba_code9.png">
+                    <img class="code" src="images/nba_code10.png">
+                </p>
+            </div>
+            <br>
             <hr>
 
         </div> <!-- /container -->
@@ -97,6 +209,7 @@
         <br>
         <br>
     </footer>
+    <script src="assets/tabs.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -108,4 +221,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -5,7 +5,7 @@ body {
 
 .homepage-top {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .othertabs-top {
@@ -13,7 +13,12 @@ body {
   padding: 2rem 2rem;
 }
 
-img {
+.box-title {
+  font-size: 28px;
+  color: #5891a6;
+}
+
+.headshot {
   max-width: 300px;
   max-height: 300px;
   border-radius: 150px;
@@ -44,7 +49,6 @@ img {
 }
 
 .navbar {
-  background-color: blueviolet;
   padding-right: 10%;
   padding-left: 10%;
 }
@@ -60,7 +64,7 @@ img {
   padding-left: 10px;
 }
 
-.learn-more {
+.blue-button {
   background-color: #5891a6;
   border-color: #5891a6;
 }
@@ -80,6 +84,78 @@ img {
 
 .skill-header {
   font-size: 20px;
+  color: #5891a6;
+}
+
+.skill-list {
+  margin-bottom: 15px;
+}
+
+.tech-header {
+  font-size: 18px;
+  color: #5891a6;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+iframe {
+  border-width: 0px;
+}
+
+.code {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  border: 5px white solid;
+}
+
+.sample-pics {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tab-description{
+  margin: 15px;
 }
 
 @media (max-width: 992px) {
