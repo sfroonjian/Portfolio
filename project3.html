@@ -78,22 +78,19 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
-                <a href="https://github.com/sfroonjian/Player-Stats-Analysis-Project" target="_blank"
+                <h1 class="display-3 title-name2">Belly Button Biodiversity</h1>
+                <a href="https://github.com/sfroonjian/Plotly-Belly-Button-Biodiversity" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-sm-12 sample-pics">
+                    <img class="code" src="images/bellybutton1.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
-                </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                <div class="col-sm-12 sample-pics">
+                    <img class="code" src="images/bellybutton2.png">
                 </div>
             </div>
             <br>
@@ -109,100 +106,63 @@
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button so users can stay
-                    up to do on latest Mars news/information.
-                    All of that data will be compiled and displayed neatly in an HTML page.
+                    The purpose of this project is to create a single HTML dashboard where users can select different
+                    test subjects from a dropdown list to see various charts displaying data on that subject's belly
+                    betton.
+                    This was done by importing data from a json file into a Javascript file using D3.js.
+                    Both D3 and Plotly were then used to generate the charts and connect them to the HTML page. Lastly,
+                    CSS and Bootstrap were used to design the layout of the page.
                 </p>
             </div>
 
             <div id="tech" class="tabcontent">
                 <div class="row tab-description">
-                    <!-- <p class="tab-description"> -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Languages</h2>
                         <ul>
-                            <li>Python</li>
+                            <li>Javascript</li>
                             <li>HTML</li>
                             <li>CSS</li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
-                        <h2 class="tech-header">Data Extraction & Manipulation</h2>
+                    <div class="col-md-4">
+                        <h2 class="tech-header">Data Manipulation & Visualization</h2>
                         <ul>
-                            <li>Spinlter</li>
-                            <li>Beautiful Soup</li>
-                            <li>Flask</li>
-                            <li>Pandas</li>
+                            <li>Plotly</li>
+                            <li>D3.js</li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
-                        <h2 class="tech-header">Databases</h2>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
-                        </ul>
-                        <!-- </p> -->
-                    </div>
-
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jinja</li>
                             <li>Bootstrap</li>
-                            <li>Jupyter Notebook</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
 
             <div id="sources" class="tabcontent">
                 <p class="tab-description">
-                <ul>
-                    <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
-                    </li>
-                    <li>
-                        Mars Featured Image: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
-                    </li>
-                    <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
-                    </li>
-                    <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
-                    </li>
-                </ul>
+                    <strong>Belly Button Data:</strong>
+                    <br>
+                    Hulcr, J. et al.(2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but
+                    Predictable. Retrieved from:
+                    <a class="link" href="http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/"
+                        target="_blank">
+                        http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
+                    </a>
                 </p>
             </div>
 
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
-                    <img class="code" src="images/mars_scrape1.png">
-                    <img class="code" src="images/mars_scrape2.png">
-                    <img class="code" src="images/mars_scrape3.png">
-                    <img class="code" src="images/mars_scrape4.png">
-                    <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
-                    <img class="code" src="images/mars_app.png">
-                    <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
-                    <img class="code" src="images/mars_html.png">
+                    <img class="code" src="images/bellycode1.png">
+                    <img class="code" src="images/bellycode2.png">
+                    <img class="code" src="images/bellycode3.png">
+                    <img class="code" src="images/bellycode4.png">
+                    <img class="code" src="images/bellycode5.png">
                 </p>
             </div>
             <br>
