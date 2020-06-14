@@ -13,6 +13,13 @@ body {
   padding: 2rem 2rem;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0px;
+}
+
 .box-title {
   font-size: 28px;
   color: #5891a6;
@@ -166,4 +173,19 @@ iframe {
   .title-name {
     font-size: 60px;
   }
+}
+
+@media screen and (min-width: 768px){
+  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+    }
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
 }
