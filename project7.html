@@ -43,8 +43,8 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01"
-                        aria-haspopup="true" aria-expanded="false">Projects</a>
+                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01" aria-haspopup="true"
+                        aria-expanded="false">Projects</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="project1.html">Project 1</a>
                         <a class="dropdown-item" href="project2.html">Project 2</a>
@@ -74,22 +74,28 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
-                <a href="https://github.com/sfroonjian/Player-Stats-Analysis-Project" target="_blank"
+                <h1 class="display-3 title-name2">World Wide Weather</h1>
+                <a href="https://github.com/sfroonjian/API-World-Wide-Weather-Analysis" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-lg-4 sample-pics">
+                    <img class="code" src="images/weather/graph1.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
+                <div class="col-lg-4 sample-pics">
+                    <img class="code" src="images/weather/graph2.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                <div class="col-lg-4 sample-pics">
+                    <img class="code" src="images/weather/graph3.png">
+                </div>
+                <div class="col-lg-7 sample-pics">
+                    <img class="code2 map" src="images/weather/map1.png">
+                </div>
+                <div class="col-lg-5 sample-pics">
+                    <img class="code2 map" src="images/weather/map2.png">
                 </div>
             </div>
             <br>
@@ -105,99 +111,81 @@
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button so users can stay
-                    up to do on latest Mars news/information.
-                    All of that data will be compiled and displayed neatly in an HTML page.
+                    The purpose of the first part this project is to determine if there is a correlation between the
+                    following:
+                <ol>
+                    <li>latitude vs. temperature</li>
+                    <li>latitude vs. cloudiness</li>
+                    <li>latitude vs. humidity</li>
+                    <li>latitude vs wind speeds</li>
+                </ol>
+                </p>
+                <p class="tab-description">
+                    This was done by creating code that randomly selects 500-600 cities world-wide, using Open Weather
+                    Map API to obtain weather data from each city, and then using Matplotlib to create visualizations of
+                    that data.
+                    <br>
+                    <br>
+                    The purpose of the second part of this project is use GeoPlaces to create a heat map that displays
+                    where the randomly-selected cities are located in the world.
+                    The selected cities were narrowed down based on ideal weather conditions determined by the
+                    user. All hotels within 5 km of each of the reamining cities were then plotted on a map.
                 </p>
             </div>
 
             <div id="tech" class="tabcontent">
                 <div class="row tab-description">
                     <!-- <p class="tab-description"> -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Languages</h2>
                         <ul>
                             <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>Spinlter</li>
-                            <li>Beautiful Soup</li>
-                            <li>Flask</li>
+                            <li>APIs</li>
+                            <li>GeoCode</li>
+                            <li>GeoPlaces</li>
+                            <li>Matplotlib</li>
                             <li>Pandas</li>
+                            <li>NumPy</li>
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
-                        <h2 class="tech-header">Databases</h2>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
-                        </ul>
-                        <!-- </p> -->
-                    </div>
-
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jinja</li>
-                            <li>Bootstrap</li>
                             <li>Jupyter Notebook</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
 
             <div id="sources" class="tabcontent">
                 <p class="tab-description">
-                <ul>
-                    <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
-                    </li>
-                    <li>
-                        Mars Featured Image: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
-                    </li>
-                    <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
-                    </li>
-                    <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
-                    </li>
-                </ul>
+                    API to obtain weather data: <a class="link" href="https://openweathermap.org/api"
+                        target="_blank">Open Weather API</a>
                 </p>
             </div>
 
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
+                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from
+                    websites
                     <img class="code" src="images/mars_scrape1.png">
                     <img class="code" src="images/mars_scrape2.png">
                     <img class="code" src="images/mars_scrape3.png">
                     <img class="code" src="images/mars_scrape4.png">
                     <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
+                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to
+                    webpage routes
                     <img class="code" src="images/mars_app.png">
                     <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
+                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and
+                    display it neatly on a webpage
                     <img class="code" src="images/mars_html.png">
                 </p>
             </div>
