@@ -69,6 +69,10 @@ body {
   padding-left: 10px;
 }
 
+.navbar-brand:hover {
+  background-color: #007bff;
+}
+
 .blue-button {
   background-color: #5891a6;
   border-color: #5891a6;

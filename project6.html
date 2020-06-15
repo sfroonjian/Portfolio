@@ -71,25 +71,24 @@
 
     <main role="main">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
-                <a href="https://github.com/sfroonjian/Player-Stats-Analysis-Project" target="_blank"
+                <h1 class="display-3 title-name2">Employee Database Analysis</h1>
+                <a href="https://github.com/sfroonjian/SQL-Employee-Database-Analysis" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-lg-12 sample-pics">
+                    <img class="code2" src="images/employees/erd.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
+                <div class="col-lg-7 sample-pics">
+                    <img class="code2" src="images/employees/query2.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                <div class="col-lg-5 sample-pics">
+                    <img class="code2" src="images/employees/bargraph.png">
                 </div>
             </div>
             <br>
@@ -98,19 +97,31 @@
             <div class="tab">
                 <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'purpose')">Purpose</button>
                 <button class="tablinks" onclick="openCity(event, 'tech')">Technologies Used</button>
-                <button class="tablinks" onclick="openCity(event, 'sources')">Data Sources</button>
                 <button class="tablinks" onclick="openCity(event, 'example')">Example Code</button>
             </div>
 
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button so users can stay
-                    up to do on latest Mars news/information.
-                    All of that data will be compiled and displayed neatly in an HTML page.
+                    The purpose of this analysis is to research the employees of a corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+                    These are the problems that were solved by running queries on PostgreSQL:
+                    <ol>
+                        <li>List the employee number, last name, first name, sex, and salary for all employees.</li>
+                        <li>List first name, last name, and hire date for employees who were hired in 1986.</li>
+                        <li>List the managers of each department with the following information: department number, department name, the manager's employee number, last name, first name.</li>
+                        <li>List the department of each employee with the following information: employee number, last name, first name, and department name.</li>
+                        <li>List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."</li>
+                        <li>List all employees in the Sales department, including their employee number, last name, first name, and department name.</li>
+                        <li>List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.</li>
+                        <li>In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.</li>
+                    </ol>
+                </p>
+                <p class="tab-description">
+                    Then, by importing the database into Pandas, the following charts were created:
+                    <ol>
+                        <li>Histogram to visualize the most common salary ranges for employees</li>
+                        <li>Bar chart of average salaries of employees by title</li>
+                    </ol>
                 </p>
             </div>
 
@@ -121,84 +132,56 @@
                         <h2 class="tech-header">Languages</h2>
                         <ul>
                             <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li>SQL</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>Spinlter</li>
-                            <li>Beautiful Soup</li>
-                            <li>Flask</li>
+                            <li>SQLAlchemy</li>
                             <li>Pandas</li>
+                            <li>Matplotlib</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Databases</h2>
                         <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
+                            <li>PostgreSQL</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jinja</li>
-                            <li>Bootstrap</li>
+                            <li>Entity Relationship Diagram (ERD)</li>
                             <li>Jupyter Notebook</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
 
-            <div id="sources" class="tabcontent">
-                <p class="tab-description">
-                <ul>
-                    <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
-                    </li>
-                    <li>
-                        Mars Featured Image: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
-                    </li>
-                    <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
-                    </li>
-                    <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
-                    </li>
-                </ul>
-                </p>
-            </div>
-
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
-                    <img class="code" src="images/mars_scrape1.png">
-                    <img class="code" src="images/mars_scrape2.png">
-                    <img class="code" src="images/mars_scrape3.png">
-                    <img class="code" src="images/mars_scrape4.png">
+                    <strong>emplyees_db_schema.sql</strong>- PostgreSQL schema to create database tables
+                    <img class="code2" src="images/employees/schema1.png">
+                    <img class="code2" src="images/employees/schema2.png">
                     <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
-                    <img class="code" src="images/mars_app.png">
+                    <strong>employees_db_queries.sql</strong>- SQL queries to obtain desired outputs
+                    <img class="code" src="images/employees/querycode1.png">
+                    <img class="code" src="images/employees/querycode2.png">
                     <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
-                    <img class="code" src="images/mars_html.png">
+                    <strong>employees_db_graphs.ipynb</strong>- uses SQLAlchemy to import data from database and Pandas and Matplotlib to create figures
+                    <img class="code" src="images/employees/graphcode1.png">
+                    <img class="code" src="images/employees/graphcode2.png">
+                    <img class="code" src="images/employees/graphcode3.png">
+                    <img class="code" src="images/employees/graphcode4.png">
+                    <img class="code" src="images/employees/graphcode5.png">
+                    <img class="code" src="images/employees/graphcode6.png">
+                    <img class="code" src="images/employees/graphcode7.png">
+                    <img class="code" src="images/employees/graphcode8.png">
+                    <img class="code" src="images/employees/graphcode9.png">
                 </p>
             </div>
             <br>
