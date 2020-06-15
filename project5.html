@@ -73,7 +73,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
+                <h1 class="display-3 title-name2">Hawaii Vacation Weather</h1>
                 <a href="https://github.com/sfroonjian/Player-Stats-Analysis-Project" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
             </div>
@@ -81,14 +81,23 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-md-3 sample-pics">
+                    <img class="code" src="images/hawaii/hawaii_temp_table.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
+                <div class="col-md-6 sample-pics">
+                    <img class="code2" src="images/hawaii/hawaii_station_table.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                <div class="col-md-3 sample-pics">
+                    <img class="code2" src="images/hawaii/hawaii_trip_table.png">
+                </div>
+                <div class="col-md-4 sample-pics">
+                    <img class="code map" src="images/hawaii/hawaii_temp_graph.png">
+                </div>
+                <div class="col-md-4 sample-pics">
+                    <img class="code map" src="images/hawaii/hawaii_station_map.png">
+                </div>
+                <div class="col-md-4 sample-pics">
+                    <img class="code map" src="images/hawaii/hawaii_trip_graph.png">
                 </div>
             </div>
             <br>
@@ -97,19 +106,15 @@
             <div class="tab">
                 <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'purpose')">Purpose</button>
                 <button class="tablinks" onclick="openCity(event, 'tech')">Technologies Used</button>
-                <button class="tablinks" onclick="openCity(event, 'sources')">Data Sources</button>
                 <button class="tablinks" onclick="openCity(event, 'example')">Example Code</button>
             </div>
 
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button so users can stay
-                    up to do on latest Mars news/information.
-                    All of that data will be compiled and displayed neatly in an HTML page.
+                    Everyone hopes to have great weather when they go on vacation, but it can be hard to plan a vacation in advanced when you are unsure what the weather is going to be like.
+                    The purpose of this app is to track the precipitation and temperature of 9 locations in Hawaii over the past few years so that users can enter in the dates they are planning on going on vacation to see what the precipitation and temperatures of that date range were in past years.
+                    Users can use the weather data from previous years to predict the best time for them to go on their trip.
                 </p>
             </div>
 
@@ -128,76 +133,61 @@
                     <div class="col-md-3">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>Spinlter</li>
-                            <li>Beautiful Soup</li>
+                            <li>SQLAlchemy</li>
+                            <li>ORM Queries</li>
                             <li>Flask</li>
+                            <li>Gmaps</li>
+                            <li>SciPy</li>
+                            <li>Matplotlib</li>
                             <li>Pandas</li>
+                            <li>NumPy</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Databases</h2>
                         <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
+                            <li>SQLite</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jinja</li>
-                            <li>Bootstrap</li>
                             <li>Jupyter Notebook</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
 
-            <div id="sources" class="tabcontent">
-                <p class="tab-description">
-                <ul>
-                    <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
-                    </li>
-                    <li>
-                        Mars Featured Image: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
-                    </li>
-                    <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
-                    </li>
-                    <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
-                    </li>
-                </ul>
-                </p>
-            </div>
-
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
-                    <img class="code" src="images/mars_scrape1.png">
-                    <img class="code" src="images/mars_scrape2.png">
-                    <img class="code" src="images/mars_scrape3.png">
-                    <img class="code" src="images/mars_scrape4.png">
+                    <strong>climate_analysis.ipynb</strong>- uses Python, SQLAlchemy, Pandas, and Matplotlib to extract, query, and manipulate data from SQLite
+                    <img class="code" src="images/hawaii/code1.png">
+                    <img class="code" src="images/hawaii/code2.png">
+                    <img class="code" src="images/hawaii/code3.png">
+                    <img class="code" src="images/hawaii/code4.png">
+                    <img class="code" src="images/hawaii/code5.png">
+                    <img class="code" src="images/hawaii/code6.png">
+                    <img class="code" src="images/hawaii/code7.png">
+                    <img class="code" src="images/hawaii/code8.png">
+                    <img class="code" src="images/hawaii/code9.png">
+                    <img class="code" src="images/hawaii/code10.png">
+                    <img class="code" src="images/hawaii/code11.png">
+                    <img class="code" src="images/hawaii/code12.png">
+                    <img class="code" src="images/hawaii/code13.png">
+                    <img class="code" src="images/hawaii/code14.png">
+                    <img class="code" src="images/hawaii/code15.png">
+                    <img class="code" src="images/hawaii/code16.png">
+                    <img class="code" src="images/hawaii/code17.png">
+                    <img class="code" src="images/hawaii/code18.png">
+                    <img class="code" src="images/hawaii/code19.png">
                     <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
-                    <img class="code" src="images/mars_app.png">
-                    <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
-                    <img class="code" src="images/mars_html.png">
+                    <strong>app.py</strong>- uses Flask and Python to render data in database to webpage routes
+                    <img class="code" src="images/hawaii/code20.png">
+                    <img class="code" src="images/hawaii/code21.png">
+                    <img class="code" src="images/hawaii/code22.png">
+                    <img class="code" src="images/hawaii/code23.png">
                 </p>
             </div>
             <br>
