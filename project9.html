@@ -43,8 +43,8 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01" aria-haspopup="true"
-                        aria-expanded="false">Projects</a>
+                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01"
+                        aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="project1.html">Players in the NBA, NFL, MLB, & NHL</a>
                             <a class="dropdown-item" href="project2.html">Mars Scraping</a>
@@ -71,19 +71,23 @@
     </nav>
 
     <main role="main">
-
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">This Website- My Portfolio</h1>
-                <a href="https://github.com/sfroonjian/Portfolio-Website" target="_blank"
+                <h1 class="display-3 title-name2">Health Risks Faced by Demographics</h1>
+                <a href="https://github.com/sfroonjian" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
             </div>
         </div>
 
         <div class="container">
-            <div class="random-text">
-                No need to display any images here because, well, you're already looking it!
+            <div class="row">
+                <div class="col-lg-6 sample-pics">
+                    <img class="code" src="images/d3/graph1.png">
+                </div>
+                <div class="col-lg-6 sample-pics">
+                    <img class="code" src="images/d3/graph2.png">
+                </div>
             </div>
             <br>
 
@@ -91,20 +95,24 @@
             <div class="tab">
                 <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'purpose')">Purpose</button>
                 <button class="tablinks" onclick="openCity(event, 'tech')">Technologies Used</button>
+                <button class="tablinks" onclick="openCity(event, 'sources')">Data Sources</button>
                 <button class="tablinks" onclick="openCity(event, 'example')">Example Code</button>
             </div>
 
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    The purpose of creating this website is so that I have a portfolio that displays all of my projects and information in one cohesive and easy-to-navigate setting.
+                    The purpose of this project is to analyze the health risks facing particular demographics.
+                    Specifically, this project looks to see if poverty, age, or household income has any correlation to obesity, smoking, and lack of healthcare.
+                    To make it easy for readers to understand the findings, all the data is compiled into one interactive graph where users can toggle and choose which paring of variables to view.
+                    The interactive chart was created using Javascript and D3.
                 </p>
             </div>
 
             <div id="tech" class="tabcontent">
                 <div class="row tab-description">
                     <!-- <p class="tab-description"> -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h2 class="tech-header">Languages</h2>
                         <ul>
                             <li>Javascript</li>
@@ -113,30 +121,39 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
+                        <h2 class="tech-header">Data Extraction & Manipulation</h2>
+                        <ul>
+                            <li>D3</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
                             <li>Bootstrap</li>
-                            <li>Github Pages</li>
                         </ul>
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
 
+            <div id="sources" class="tabcontent">
+                <p class="tab-description">
+                        All data and demographics: <a class="link" href="https://data.census.gov/cedsci/deeplinks?url=https%3A%2F%2Ffactfinder.census.gov%2Ffaces%2Fnav%2Fjsf%2Fpages%2Fsearchresults.xhtml&tid=GOVSTIMESERIES.CG00ORG01"
+                            target="_blank">2014 Census ACS 1-year Estimate</a>
+                </p>
+            </div>
+
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>project2.html</strong>- renders the "Mars Scrapping" project route
-                    <img class="code" src="images/website/html1.png">
-                    <img class="code" src="images/website/html2.png">
-                    <img class="code" src="images/website/html3.png">
-                    <img class="code" src="images/website/html4.png">
-                    <br><br>
-                    <strong>index.css</strong>- style sheet for all routes
-                    <img class="code" src="images/website/css.png">
-                    <br><br>
-                    <strong>tabs.js</strong>- JavaScript to make tabs work on project routes
-                    <img class="code" src="images/website/js.png">
+                    <img class="code" src="images/d3/code1.png">
+                    <img class="code" src="images/d3/code2.png">
+                    <img class="code" src="images/d3/code3.png">
+                    <img class="code" src="images/d3/code4.png">
+                    <img class="code" src="images/d3/code5.png">
+                    <img class="code" src="images/d3/code6.png">
+                    <img class="code" src="images/d3/code7.png">
+                    <img class="code" src="images/d3/code8.png">
                 </p>
             </div>
             <br>
