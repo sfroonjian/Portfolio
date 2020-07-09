@@ -76,22 +76,21 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
-                <a href="https://github.com/sfroonjian/Web-Scraping-Mars-Data" target="_blank"
+                <h1 class="display-3 title-name2">Find Your Destination</h1>
+                <a href="https://github.com/sfroonjian/Find-Your-Destinations" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
+                <a href="https://findyourdestinations.herokuapp.com/" target="_blank"
+                    class="btn btn-primary green-button">Project's Website</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-lg-6 sample-pics">
+                    <img class="code" src="images/travelapp/screenshot1.png">
                 </div>
                 <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
-                </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                    <img class="code" src="images/travelapp/screenshot2.png">
                 </div>
             </div>
             <br>
@@ -107,12 +106,18 @@
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button, so users can stay
-                    up to do on latest news/information about Mars.
-                    All of that data is then compiled and displayed neatly in an HTML page.
+                    My group and I (4 people total) created a full-stack travel app containing an interactive map and dashboard for anyone trying to decide which state to travel to.
+                    Our webpage provides a choropleth on the most popular states to travel to based on a equation designed by our group.
+                    By clicking on each state, users can find information on various attractions, airfare, hotel ratings, and the value of the dollar.
+                    <br><br>
+                    This was created using the following tools:
+                    <ul>
+                        <li>Beautiful Soup and Pandas to scrape the web for data and clean it up</li>
+                        <li>An ERD and SQLAlchemy to import the data into PostgreSQL</li>
+                        <li>Flask to create dynamic API routes that render Jsonified objects of the data</li>
+                        <li>Javascript, D3, Leaflet, and Frappe Charts to display the interactive maps, charts, and lists</li>
+                        <li>Heroku to deploy the in the cloud</li>
+                    </ul>
                 </p>
             </div>
 
@@ -123,6 +128,8 @@
                         <h2 class="tech-header">Languages</h2>
                         <ul>
                             <li>Python</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
                             <li>HTML</li>
                             <li>CSS</li>
                         </ul>
@@ -131,7 +138,8 @@
                     <div class="col-md-3">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>Spinlter</li>
+                            <li>SQLAlchemy</li>
+                            <li>Chromedriver</li>
                             <li>Beautiful Soup</li>
                             <li>Flask</li>
                             <li>Pandas</li>
@@ -141,15 +149,20 @@
                     <div class="col-md-3">
                         <h2 class="tech-header">Databases</h2>
                         <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jinja</li>
+                            <li>D3</li>
+                            <li>Heroku</li>
+                            <li>Leaflet</li>
+                            <li>API's</li>
+                            <li>Frappe Charts</li>
+                            <li>GeoJson</li>
+                            <li>Entity Relationship Diagrams (ERD)</li>
                             <li>Bootstrap</li>
                             <li>Jupyter Notebook</li>
                         </ul>
@@ -161,26 +174,21 @@
                 <p class="tab-description">
                 <ul>
                     <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
+                        Airfare & Passenger Amounts: <a class="link" href="https://www.transtats.bts.gov/AverageFare/"
+                            target="_blank">United States Department of Transportation</a>
                     </li>
                     <li>
-                        Mars Featured Image: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
+                        Hotel Rankings: <a class="link"
+                            href="https://www.kaggle.com/datafiniti/hotel-reviews?select=Datafiniti_Hotel_Reviews.csv" target="_blank">
+                            Datafiniti's Business Database</a>
                     </li>
                     <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
+                        List of Attractions: <a class="link" href="https://en.wikipedia.org/wiki/Tourist_attractions_in_the_United_States"
+                            target="_blank">Wikipedia</a>
                     </li>
                     <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
+                        Value of Dollar Based on State: <a class="link" href="https://www.usatoday.com/story/money/2019/05/25/us-dollar-how-much-its-worth-value-in-every-state/39501091/" target="_blank">
+                            USA Today</a>
                     </li>
                 </ul>
                 </p>
@@ -188,17 +196,27 @@
 
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
-                    <img class="code" src="images/mars_scrape1.png">
-                    <img class="code" src="images/mars_scrape2.png">
-                    <img class="code" src="images/mars_scrape3.png">
-                    <img class="code" src="images/mars_scrape4.png">
+                    <strong>app.py</strong>- uses Flask, Python, and SQLAlchemy to Jsonify data from database and render in URL routes as API's
+                    <img class="code" src="images/travelapp/app1.png">
+                    <img class="code" src="images/travelapp/app2.png">
                     <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
-                    <img class="code" src="images/mars_app.png">
+                    <strong>logic.js</strong>- uses Javascript, D3, Leafleft, and Frappe Charts to extract data from API's and makes interactive maps and charts to display the data
+                    <img class="code" src="images/travelapp/js1.png">
+                    <img class="code" src="images/travelapp/js2.png">
+                    <img class="code" src="images/travelapp/js3.png">
+                    <img class="code" src="images/travelapp/js4.png">
+                    <img class="code" src="images/travelapp/js5.png">
+                    <img class="code" src="images/travelapp/js6.png">
                     <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
-                    <img class="code" src="images/mars_html.png">
+                    <strong>db_script.txt</strong>- uses SQL to create tables on PostgreSQL of the dataframes we scraped and cleaned up in Jupyter Notebook
+                    <br>
+                    <img class="code2" src="images/travelapp/db1_1.png">
+                    <img class="code" src="images/travelapp/db1_2.png">
+                    <br><br>
+                    <strong>db_script2.txt</strong>- uses SQL to create one large combined table on PostgreSQL of the counts and ranks of the data in the other 13 tables
+                    <img class="code" src="images/travelapp/db2_1.png">
+                    <img class="code" src="images/travelapp/db2_2.png">
+                    <img class="code" src="images/travelapp/db2_3.png">
                 </p>
             </div>
             <br>

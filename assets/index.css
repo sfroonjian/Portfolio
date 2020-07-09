@@ -70,7 +70,7 @@ body {
 }
 
 .navbar-brand:hover {
-  background-color: #007bff;
+  background-color: #578af7;
 }
 
 .blue-button {
@@ -78,9 +78,31 @@ body {
   border-color: #5891a6;
 }
 
+.blue-button:hover {
+  background-color: #578af7;
+  border-color: #578af7;
+}
+
 .grey-button {
   background-color: #6c757d;
   border-color: #6c757d;
+  display: inline-block !important;
+}
+
+.grey-button:hover {
+  background-color: #578af7;
+  border-color: #578af7;
+}
+
+.green-button {
+  background-color: #58a698;
+  border-color: #58a698;
+  display: inline-block !important;
+}
+
+.green-button:hover {
+  background-color: #578af7;
+  border-color: #578af7;
 }
 
 .link {
