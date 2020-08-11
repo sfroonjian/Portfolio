@@ -43,8 +43,8 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01" aria-haspopup="true"
-                        aria-expanded="false">Projects</a>
+                    <a class="nav-link dropdown-toggle" href="allprojects.html" id="dropdown01"
+                        aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="project14.html">Predict Your Salary</a>
                             <a class="dropdown-item" href="project11.html">Find Your Destination</a>
@@ -75,34 +75,24 @@
     </nav>
 
     <main role="main">
-
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">World Wide Weather</h1>
-                <a href="https://github.com/sfroonjian/API-World-Wide-Weather-Analysis" target="_blank"
+                <h1 class="display-3 title-name2">Filtering UFO Sightings</h1>
+                <a href="https://github.com/sfroonjian/JS-DOM-Manipulation-Filtering" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
-                <a href="https://sfroonjian.github.io/HTML-Weather-Patterns-Webpage/" target="_blank"
+                <a href="https://sfroonjian.github.io/JS-DOM-Manipulation-Filtering/" target="_blank"
                     class="btn btn-primary green-button">Project's Website</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 sample-pics">
-                    <img class="code" src="images/weather/graph1.png">
+                <div class="col-lg-6 sample-pics">
+                    <img class="code map" src="images/ufo/screenshot1.png">
                 </div>
-                <div class="col-lg-4 sample-pics">
-                    <img class="code" src="images/weather/graph2.png">
-                </div>
-                <div class="col-lg-4 sample-pics">
-                    <img class="code" src="images/weather/graph3.png">
-                </div>
-                <div class="col-lg-7 sample-pics">
-                    <img class="code2 map" src="images/weather/map1.png">
-                </div>
-                <div class="col-lg-5 sample-pics">
-                    <img class="code2 map" src="images/weather/map2.png">
+                <div class="col-lg-6 sample-pics">
+                    <img class="code map" src="images/ufo/screenshot2.png">
                 </div>
             </div>
             <br>
@@ -111,94 +101,52 @@
             <div class="tab">
                 <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'purpose')">Purpose</button>
                 <button class="tablinks" onclick="openCity(event, 'tech')">Technologies Used</button>
-                <button class="tablinks" onclick="openCity(event, 'sources')">Data Sources</button>
                 <button class="tablinks" onclick="openCity(event, 'example')">Example Code</button>
             </div>
 
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    <strong>Part I</strong>
-                    <br>
-                    The purpose of the first part of this project is to determine if there is a correlation between the
-                    following:
-                <ol>
-                    <li>latitude vs. temperature</li>
-                    <li>latitude vs. cloudiness</li>
-                    <li>latitude vs. humidity</li>
-                    <li>latitude vs wind speeds</li>
-                </ol>
-                </p>
-                <p class="tab-description">
-                    This was done by creating code that randomly selects 500-600 cities world-wide, using Open Weather
-                    Map API to obtain weather data from each city, and then using Matplotlib to create visualizations of
-                    that data.
-                    <br>
-                    <br>
-                    <strong>Part II</strong>
-                    <br>
-                    The purpose of the second part of this project is use GeoPlaces to create a heat map that displays
-                    where the randomly-selected cities are located in the world.
-                    The selected cities were narrowed down based on ideal weather conditions determined by the
-                    user. All hotels within 5 km of each of the reamining cities were then plotted on a map.
+                    Often, data collections are so large that it is not practical to manually search through it all.
+                    The purpose of this project is to create a dynamic table equipped with drop-down and text-box filters
+                    for date, city, state, country, and shape so users can chose exactly what data they want to appear.
+                    <br><br>
+                    This was done using JavaScript, HTML, and CSS. D3.js was used to connect the HTML to JavaScript to manipulate the DOM.
                 </p>
             </div>
 
             <div id="tech" class="tabcontent">
                 <div class="row tab-description">
-                    <!-- <p class="tab-description"> -->
                     <div class="col-md-4">
                         <h2 class="tech-header">Languages</h2>
                         <ul>
-                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
                         </ul>
                     </div>
 
                     <div class="col-md-4">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>APIs</li>
-                            <li>Gmaps</li>
-                            <li>Matplotlib</li>
-                            <li>Pandas</li>
-                            <li>NumPy</li>
+                            <li>D3</li>
                         </ul>
                     </div>
 
                     <div class="col-md-4">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
-                            <li>Jupyter Notebook</li>
+                            <li>Bootstrap</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div id="sources" class="tabcontent">
-                <p class="tab-description">
-                    API to obtain weather data: <a class="link" href="https://openweathermap.org/api"
-                        target="_blank">Open Weather API</a>
-                </p>
-            </div>
-
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>WeatherPy.ipynb</strong>- part I of project
-                    <img class="code" src="images/weather/weather1.png">
-                    <img class="code" src="images/weather/weather2.png">
-                    <img class="code" src="images/weather/weather3.png">
-                    <img class="code" src="images/weather/weather4.png">
-                    <img class="code" src="images/weather/weather5.png">
-                    <img class="code" src="images/weather/weather6.png">
-                    <img class="code" src="images/weather/weather7.png">
-                    <br><br>
-                    <strong>VacationPy.ipynb</strong>- part II of project
-                    <img class="code" src="images/weather/vacation1.png">
-                    <img class="code" src="images/weather/vacation2.png">
-                    <img class="code" src="images/weather/vacation3.png">
-                    <img class="code" src="images/weather/vacation4.png">
-                    <img class="code" src="images/weather/vacation5.png">
-                    <img class="code" src="images/weather/vacation6.png">
+                    <strong>app.js</strong>- JavaScript code to maniupulate the DOM
+                    <img class="code" src="images/ufo/code1.png">
+                    <img class="code" src="images/ufo/code2.png">
                 </p>
             </div>
             <br>
