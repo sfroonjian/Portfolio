@@ -78,22 +78,27 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron othertabs-top">
             <div class="container">
-                <h1 class="display-3 title-name2">Mars Scraping</h1>
-                <a href="https://github.com/sfroonjian/Web-Scraping-Mars-Data" target="_blank"
+                <h1 class="display-3 title-name2">Predict Your Salary</h1>
+                <a href="#" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
+                <a href="#" target="_blank"
+                    class="btn btn-primary green-button">Project's Website</a>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 sample-pics">
-                    <img class="code" src="images/mars_pic1.png">
+                <div class="col-md-6 sample-pics">
+                    <img class="code" src="images/.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic2.png">
+                <div class="col-md-6 sample-pics">
+                    <img class="code" src="images/.png">
                 </div>
-                <div class="col-lg-6 sample-pics">
-                    <img class="code" src="images/mars_pic3.png">
+                <div class="col-md-6 sample-pics">
+                    <img class="code" src="images/.png">
+                </div>
+                <div class="col-md-6 sample-pics">
+                    <img class="code" src="images/.png">
                 </div>
             </div>
             <br>
@@ -109,12 +114,21 @@
             <!-- Tab content -->
             <div id="purpose" class="tabcontent">
                 <p class="tab-description">
-                    There are so many websites that contain interesting information about Mars, and new information is
-                    added to many of those websites every day.
-                    The purpose of this project is to create a web page that scrapes several websites using Beautiful
-                    Soup and Splinter to gather the latest data on Mars every time you click a button, so users can stay
-                    up to do on latest news/information about Mars.
-                    All of that data is then compiled and displayed neatly in an HTML page.
+                    My group and I (5 people total) created a full-stack machine-learning app that predicts the salary of data
+                    professionals based on several criteria that the users inputs into a form.
+                    In addition to the prediction, we made several charts, graphs, and maps to display various data
+                    on the subject including a breakdown of salary by gender, country, and education as well as
+                    the most popular technologies used in the industry.
+                    <br><br>
+                    This was created using the following tools:
+                    <ul>
+                        <li>Pandas to extract and transform the data</li>
+                        <li>SQLAlchemy to load the data into PostgreSQL</li>
+                        <li>SKLearn, specifically Gradient Boosting Regressor, to create and fit the machine learning model</li>
+                        <li>Flask & SQLAlchemy to create dynamic API routes that render Jsonified objects of the data</li>
+                        <li>Tableau, Javascript, and D3 to display the interactive charts and maps</li>
+                        <li>Heroku to deploy the in the cloud</li>
+                    </ul>
                 </p>
             </div>
 
@@ -125,6 +139,8 @@
                         <h2 class="tech-header">Languages</h2>
                         <ul>
                             <li>Python</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
                             <li>HTML</li>
                             <li>CSS</li>
                         </ul>
@@ -133,27 +149,33 @@
                     <div class="col-md-3">
                         <h2 class="tech-header">Data Extraction & Manipulation</h2>
                         <ul>
-                            <li>Spinlter</li>
-                            <li>Beautiful Soup</li>
+                            <li>SQLAlchemy</li>
                             <li>Flask</li>
+                            <li>SKLearn</li>
+                            <li>Gradient Boosting Regressor Model</li>
+                            <li>Natural Language Processing</li>
                             <li>Pandas</li>
+                            <li>Tableau</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Databases</h2>
                         <ul>
-                            <li>MongoDB</li>
-                            <li>PyMongo</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h2 class="tech-header">Additional Technologies</h2>
                         <ul>
+                            <li>ETL</li>
+                            <li>Machine Learning</li>
+                            <li>API's</li>
                             <li>Jinja</li>
                             <li>Bootstrap</li>
                             <li>Jupyter Notebook</li>
+                            <li>Heroku</li>
                         </ul>
                     </div>
                 </div>
@@ -163,11 +185,11 @@
                 <p class="tab-description">
                 <ul>
                     <li>
-                        Latest Mars News Title and Description: <a class="link" href="https://mars.nasa.gov/news"
+                        Data for Machine Learning Model: <a class="link" href="https://mars.nasa.gov/news"
                             target="_blank">Nasa- Mars News</a>
                     </li>
                     <li>
-                        Mars Featured Image: <a class="link"
+                        Data for Visualizations: <a class="link"
                             href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
                             Propulsion Laboratory Images</a>
                     </li>
