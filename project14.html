@@ -81,7 +81,7 @@
                 <h1 class="display-3 title-name2">Predict Your Salary</h1>
                 <a href="#" target="_blank"
                     class="btn btn-primary blue-button">Github Repository</a>
-                <a href="#" target="_blank"
+                <a href="https://predictyoursalaryy.herokuapp.com/" target="_blank"
                     class="btn btn-primary green-button">Project's Website</a>
             </div>
         </div>
@@ -156,6 +156,7 @@
                             <li>Natural Language Processing</li>
                             <li>Pandas</li>
                             <li>Tableau</li>
+                            <li>NumPy</li>
                         </ul>
                     </div>
 
@@ -185,26 +186,16 @@
                 <p class="tab-description">
                 <ul>
                     <li>
-                        Data for Machine Learning Model: <a class="link" href="https://mars.nasa.gov/news"
-                            target="_blank">Nasa- Mars News</a>
+                        Data for Machine Learning Salary Prediction Model: <a class="link" href="https://www.brentozar.com/archive/2019/01/the-2019-data-professional-salary-survey-results/"
+                            target="_blank">Brent Ozar</a>
                     </li>
                     <li>
-                        Data for Visualizations: <a class="link"
-                            href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">Nasa Jet
-                            Propulsion Laboratory Images</a>
+                        Data for Salary Visualizations: <a class="link"
+                            href="https://www.kaggle.com/c/kaggle-survey-2019" target="_blank">Kaggle Survey</a>
                     </li>
                     <li>
-                        Mars Weather: <a class="link" href="https://twitter.com/marswxreport?lang=en"
-                            target="_blank">Mars Weather Twitter Account</a>
-                    </li>
-                    <li>
-                        Mars Table of Facts: <a class="link" href="https://space-facts.com/mars/" target="_blank">Space
-                            Facts</a>
-                    </li>
-                    <li>
-                        Images of Mars Hemispheres: <a class="link"
-                            href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-                            target="_blank">USGS Astrology Images</a>
+                        Data for Natural Language Processing to See Most Common Words in Job Positings: <a class="link" href="https://www.indeed.com/"
+                            target="_blank">Indeed</a>
                     </li>
                 </ul>
                 </p>
@@ -212,17 +203,32 @@
 
             <div id="example" class="tabcontent">
                 <p class="tab-description">
-                    <strong>scrape_mars.py</strong>- uses Beautiful Soup, Splinter, and Python to scrape data from websites
-                    <img class="code" src="images/mars_scrape1.png">
-                    <img class="code" src="images/mars_scrape2.png">
-                    <img class="code" src="images/mars_scrape3.png">
-                    <img class="code" src="images/mars_scrape4.png">
+                    <strong>app.py</strong>- uses Flask, SQLAlchemy, and Python to connect the PostgreSQL, performs queries of that data, renders API's of JSON's and HTML pages, and inputs user responses into ML model to output a prediction
+                    <img class="code" src="images/salary/flask1.png">
+                    <img class="code" src="images/salary/flask2.png">
+                    <img class="code" src="images/salary/flask3.png">
+                    <img class="code" src="images/salary/flask4.png">
+                    <img class="code" src="images/salary/flask5.png">
+                    <img class="code" src="images/salary/flask6.png">
+                    <img class="code" src="images/salary/flask7.png">
+                    <img class="code" src="images/salary/flask8.png">
+                    <img class="code" src="images/salary/flask9.png">
+                    <img class="code" src="images/salary/flask10.png">
                     <br><br>
-                    <strong>app.py</strong>- uses Flask and Python to store scraped data to PyMongo and render data to webpage routes
-                    <img class="code" src="images/mars_app.png">
+                    <strong>data_cleaning_sandy.ipynb</strong>- uses Python, Pandas, and NumPy to clean and transform the dataset to get it into the desired format to fit the machine learning model
+                    <img class="code" src="images/salary/cleaning1.png">
+                    <img class="code" src="images/salary/cleaning2.png">
+                    <img class="code" src="images/salary/cleaning3.png">
                     <br><br>
-                    <strong>index.html</strong>- uses HTML, Jinja, and Bootstrap to extract data from database and display it neatly on a webpage
-                    <img class="code" src="images/mars_html.png">
+                    <strong>machine_learning_salary_data1.ipynb</strong>- uses Pandas and SKLearn to pre-process data, determine feature importances, fit 5 different regression models, and export the best fitting model
+                    <img class="code" src="images/salary/ml1.png">
+                    <img class="code" src="images/salary/ml2.png">
+                    <img class="code" src="images/salary/ml3.png">
+                    <img class="code" src="images/salary/ml4.png">
+                    <br><br>
+                    <strong>model.js</strong>- uses JavaScipt and D3 to extract data from API's and create a user-friendly form for users to fill out to see their salary predictions
+                    <img class="code" src="images/salary/js1.png">
+                    <img class="code" src="images/salary/js2.png">
                 </p>
             </div>
             <br>
