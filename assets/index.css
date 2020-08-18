@@ -13,6 +13,11 @@ body {
   padding: 2rem 2rem;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #354373;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -131,6 +136,19 @@ body {
   margin-bottom: 30px;
 }
 
+.card-title {
+  font-size: 16px;
+  margin: 6px 0 6px 0;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
+.about-text {
+  font-size: 14px;
+}
+
 iframe {
   border-width: 0px;
 }
@@ -196,6 +214,19 @@ iframe {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+#more1, #more2, #more3, #more4, #more5 {
+  display: none;
+}
+
+.rec-header {
+  color: #5891a6;
+  margin: 0;
+}
+
+.rec-align {
+  text-align: center;
 }
 
 /* makes title name responsive for small screens */
