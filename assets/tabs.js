@@ -100,3 +100,19 @@ function myFunction5() {
     moreText5.style.display = "inline";
   }
 }
+
+function myFunction6() {
+  var dots6 = document.getElementById("dots6");
+  var moreText6 = document.getElementById("more6");
+  var btnText6 = document.getElementById("myBtn6");
+
+  if (dots6.style.display === "none") {
+    dots6.style.display = "inline";
+    btnText6.innerHTML = "Read more";
+    moreText6.style.display = "none";
+  } else {
+    dots6.style.display = "none";
+    btnText6.innerHTML = "Read less";
+    moreText6.style.display = "inline";
+  }
+}
